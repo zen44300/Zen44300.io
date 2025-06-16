@@ -1,0 +1,164 @@
+DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ZEN PROPRETÉ - Service de Nettoyage Professionnel</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Roboto', sans-serif;
+            background-color: #eef2f3;
+            color: #333;
+            margin: 0;
+            padding: 0;
+        }
+
+        header {
+            background-color: #388E3C;
+            color: white;
+            padding: 20px 0;
+            text-align: center;
+        }
+
+        nav {
+            margin: 20px 0;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin: 0 15px;
+            font-weight: bold;
+        }
+
+        .main-content {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 20px; /* Espacement entre les cartes */
+            padding: 20px;
+        }
+
+        .card {
+            background: white;
+            border-radius: 10px;
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+            padding: 20px;
+            text-align: center; /* Centrer le texte dans les cartes */
+            transition: transform 0.2s, box-shadow 0.2s;
+        }
+
+        .card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 8px 30px rgba(0, 0, 0, 0.15);
+        }
+
+        footer {
+            text-align: center;
+            padding: 20px;
+            background-color: #388E3C; 
+            color: white; 
+        }
+        
+        .contact-info {
+            text-align: center;
+            margin-top: 20px;
+        }
+
+        /* Styles pour le formulaire de devis */
+        .devis-form {
+            max-width: 600px; 
+            margin: auto; 
+            padding: 20px; 
+            background-color: white; 
+            border-radius: 10px; 
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+        }
+        
+        .devis-form label {
+            display: block; 
+            margin-bottom: 5px; 
+        }
+        
+        .devis-form input,
+        .devis-form textarea {
+            width: calc(100% - 10px);
+            padding: 10px; 
+            margin-bottom: 15px; 
+           border-radius:5px;  
+           border :1 px solid #ccc ;
+           box-sizing:border-box ;
+     }
+        
+        @media (max-width: 600px) {
+          nav a {
+              display:block ; /* Les onglets en bloc sur mobile */
+              margin :10 px ;
+          }              
+       }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>Bienvenue sur ZEN PROPRETÉ</h1>
+    <nav>
+        <a href="#">Accueil</a>
+        <a href="#">À propos</a>
+        <a href="#">Services</a>
+        <a href="#">Demander Devis</a>
+        <a href="#">Contact</a>
+    </nav>
+</header>
+
+<div class="main-content">
+    <div class="card">
+        <h2>Nettoyage Résidentiel</h2>
+        <p>Nous offrons des services de nettoyage professionnels pour votre maison. Faites briller votre espace de vie !</p>
+    </div>
+    <div class="card">
+        <h2>Nettoyage Commercial</h2>
+        <p>Notre équipe est prête à maintenir vos locaux professionnels propres et accueillants.</p>
+    </div>
+    <div class="card">
+        <h2>Services Spécialisés</h2>
+        <p>Nettoyage après déménagement, nettoyage en profondeur, nettoyage après travaux et autres services sur mesure à votre disposition.</p>
+    </div>
+    <div class="card">
+        <h2>Nettoyage Immeuble et Parties Communes</h2>
+        <p>Assurez la propreté de vos immeubles et parties communes pour un cadre agréable et accueillant.</p>
+    </div>
+</div>
+
+<div class="contact-info">
+    <h3>Contactez-nous</h3>
+    <p>Téléphone : <a href="tel:+33753944721">07 53 94 47 21</a></p>
+    <p>Email : <a href="mailto:zen.nettoyage44@gmail.com">zen.nettoyage44@gmail.com</a></p>
+    <p>Localisation : Nantes</p>
+</div>
+
+<div class="devis-form">
+    <h3>Demander un Devis</h3>
+    <form action="#" method="post">
+        <label for="nom">Nom :</label><br>
+        <input type="text" id="nom" name="nom" required><br>
+
+        <label for="email">Email :</label><br>
+        <input type="email" id="email" name="email" required><br>
+
+        <label for="telephone">Téléphone :</label><br>
+        <input type="tel" id="telephone" name="telephone" required><br>
+
+        <label for="message">Détails de la demande :</label><br>
+        <textarea id="message" name="message" rows="4" required></textarea><br>
+
+        <input type="submit" value="Envoyer">
+    </form>
+</div>
+
+<footer>
+    <p>&copy; 2023 ZEN PROPRETÉ. Tous droits réservés.</p>
+</footer>
+
+</body>
+</html>
